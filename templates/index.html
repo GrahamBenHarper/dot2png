@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>dot2png</title>
+</head>
+<body>
+
+<center>
+
+Graph:
+<br>
+<form method="GET" action="">
+<textarea name="graph" rows="10" cols="64">{{ default_text }}</textarea>
+<br><br>
+<input type="submit"/>
+<br><br>
+<img src="{{ url_for('static', filename=graph_image) }}">
+</form>
+</center>
+
+</body>
+</html>
